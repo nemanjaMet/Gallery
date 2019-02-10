@@ -161,4 +161,23 @@ public class MainActivityJava extends AppCompatActivity {
     }
 
 
+    /*
+    * Uri lUri;
+    Cursor lCursor;
+    Log.w("ImageUtils: ", "GetAllImagesFoldersCursor");
+
+    lUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+    String[] lProjection = {"DISTINCT " + MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
+            MediaStore.Images.Media.DATA, MediaStore.Images.Media.DATE_TAKEN};
+    String lSelectionString = MediaStore.Images.Media.BUCKET_DISPLAY_NAME +
+            " IS NOT NULL) GROUP BY (" + MediaStore.Images.Media.BUCKET_DISPLAY_NAME;
+    lCursor = aContext.getContentResolver().query(lUri, lProjection, lSelectionString,
+            null, null);
+
+    if (lCursor != null) {
+        Log.w("ImageUtils: ", "Returning total Folders: " + lCursor.getCount());
+    }
+    return lCursor;
+    * */
+
 }
